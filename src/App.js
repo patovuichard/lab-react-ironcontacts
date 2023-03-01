@@ -26,7 +26,7 @@ function App() {
   const sortByPopularity = () => {
     const contactsClone = [...actualContacts];
     contactsClone.sort((elem2, elem1) => {
-      return elem2.popularity.localeCompare(elem1.popularity);
+      return (elem1.popularity)-(elem2.popularity);
     });
     setActualContacts(contactsClone);
   };
